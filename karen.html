@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <link href="widget.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <h4>calendly embed</h4>
+        <div id="karenRendersHere"></div>
+        <button onclick="Karen.showPopupWidget('<user events url from karen account>');return false;"> register </button>
+        <script type="text/javascript" src="karen-widget.js"></script>
+        
+        <script>
+        Karen.initInlineWidget({
+            url: '<user events url from karen account>',
+            parentElement: document.getElementById('karenRendersHere'),
+           });
+        Karen.initBadgeWidget({
+            url: '<user events url from karen account>', 
+            text: 'Sign Up For an Event', 
+            color: '#12f4f2', 
+            branding: true
+        });
+        
+        </script>
+    </body>
+</html>
